@@ -12,7 +12,7 @@ in markdown.
 
 e.g.,
 
-```markdown
+```markdownm
 The well known Pythagorean theorem $x^2 + y^2 = z^2$ was
 proved to be invalid for other exponents[^1].
 Meaning the next equation has no integer solutions:
