@@ -5,7 +5,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             'icon': 'fa fa-facebook',
             'onClick': function(e) {
                 e.preventDefault();
-                window.open('http://www.facebook.com/sharer/sharer.php?s=100&p[url]='+encodeURIComponent(location.href));
+                window.open('http://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href));
             }
         },
         'twitter': {
@@ -13,7 +13,8 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             'icon': 'fa fa-twitter',
             'onClick': function(e) {
                 e.preventDefault();
-                window.open('http://twitter.com/home?status='+encodeURIComponent(document.title+' '+location.href));
+                // Updated to use the Intent API
+                window.open('http://twitter.com/intent/tweet?text='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href));
             }
         },
         'github': {
@@ -21,6 +22,9 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             'icon': 'fa fa-github',
             'onClick': function(e) {
                 e.preventDefault();
+                // GitHub doesn't have a "share" URL. 
+                // This usually implies you should provide a specific link in config.
+                // Defaults to main site if no specific link is provided.
                 window.open('https://github.com');
             }
         },
@@ -29,15 +33,8 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             'icon': 'fa fa-telegram',
             'onClick': function(e) {
                 e.preventDefault();
-                window.open('https://t.me');
-            }
-        },
-        'google': {
-            'label': 'Google+',
-            'icon': 'fa fa-google-plus',
-            'onClick': function(e) {
-                e.preventDefault();
-                window.open('https://plus.google.com/share?url='+encodeURIComponent(location.href));
+                // Fixed: Actually shares the URL to Telegram
+                window.open('https://t.me/share/url?url='+encodeURIComponent(location.href)+'&text='+encodeURIComponent(document.title));
             }
         },
         'weibo': {
@@ -61,19 +58,28 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             'icon': 'fa fa-vk',
             'onClick': function(e) {
                 e.preventDefault();
-                window.open('http://vkontakte.ru/share.php?url='+encodeURIComponent(location.href));
+                // Fixed: Updated domain to vk.com
+                window.open('http://vk.com/share.php?url='+encodeURIComponent(location.href));
+            }
+        },
+        // ADDED: LinkedIn (Standard professional replacement for Google+)
+        'linkedin': {
+            'label': 'LinkedIn',
+            'icon': 'fa fa-linkedin',
+            'onClick': function(e) {
+                e.preventDefault();
+                window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(location.href));
             }
         }
     };
 
-
-
     gitbook.events.bind('start', function(e, config) {
-        var opts = config.sharing;
+        var opts = config.sharing || {};
 
         // Create dropdown menu
-        var menu = $.map(opts.all, function(id) {
+        var menu = $.map(opts.all || [], function(id) {
             var site = SITES[id];
+            if (!site) return; // Guard clause if site doesn't exist
 
             return {
                 text: site.label,
@@ -93,17 +99,20 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
         // Direct actions to share
         $.each(SITES, function(sideId, site) {
+            // Check if this site is enabled in options
             if (!opts[sideId]) return;
 
             var onClick = site.onClick;
             
-            // override target link with provided link
-            var side_link = opts[`${sideId}_link`]
+            // Override target link with provided link from config
+            // Use bracket notation for compatibility
+            var side_link = opts[sideId + '_link'];
+            
             if (side_link !== undefined && side_link !== "") {
                 onClick = function(e) {
                     e.preventDefault();
                     window.open(side_link);
-                }
+                };
             }
 
             gitbook.toolbar.createButton({
