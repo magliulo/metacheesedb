@@ -1,10 +1,10 @@
 ---
 layout: home
-title: Jekyll Gitbook Theme
+title: MetaCheeseDB
 permalink: /
 ---
 
-Make Jelly site have a GitBook look!
+Metadata-curated Cheese Database
 
 ## Demo
 
@@ -214,9 +214,7 @@ The example can be previewed from
 
 ## License
 
-This work is open sourced under the Apache License, Version 2.0.
-
-Copyright 2019 Tao He.
+© 2025 Raffaele Magliulo, powered by Apache License, version 2.0.
 
 [1]: https://pages.github.com
 [2]: https://pages.github.com/themes
