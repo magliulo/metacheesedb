@@ -7,7 +7,7 @@ layout: post
 ---
 
 A wide tables needs to be wrapped into a `div` with class `table-wrapper`
-to make sure it displayed as expected on mobile devices. For example,
+to make sure it displayed as expected on mobile devices. For example,l
 
 ```markdown
 <div class="table-wrapper" markdown="block">
