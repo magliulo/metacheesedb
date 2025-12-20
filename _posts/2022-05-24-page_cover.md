@@ -7,7 +7,7 @@ layout: post
 cover: https://sighingnow.github.io/jekyll-gitbook/assets/dinosaur.gif
 ---
 
-The jekyll-gitbook theme supports adding a cover image to a specific page by adding
+The jekyll-gitbook theme supports adding a cover image to a specific page by addings
 a `cover` field to the page metadata:
 
 ```diff
