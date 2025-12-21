@@ -4,6 +4,8 @@ title: MetaCheeseDB
 permalink: /
 ---
 
+![MetaCheeseDB](assets/gitbook/images/metacheesedb.png)
+
 ### Metadata-curated Cheese Database
 
 **MetaCheeseDB** is an open source metadata-curated catalogue of cheese metagenomes for studying the cheese microbiome across production technologies, geography, and cheese style. It integrates **1,593** shotgun metagenomes spanning **156 cheese subtypes** from **19 countries** across **4 continents**, combining publicly available datasets with newly sequenced **PDO/PGI** cheeses.
