@@ -4,7 +4,7 @@ longtitle:        Metadata-curated Cheese Database
 author:           Raffaele Magliulo
 email:            raffae.magliulo@gmail.com
 description: >
-  Build Jekyll site with the GitBook style.
+  Metadata-curated Cheese Database
 
 version:          1.0
 gitbook_version:  3.2.3
