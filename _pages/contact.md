@@ -6,6 +6,9 @@ category: Jekyll
 layout: post
 ---
 
-- **Raffaele Magliulo**: [raffae.magliulo@gmail.com](mailto:raffae.magliulo@gmail.com)
-- **Francesca De Filippis**: [francesca.defilippis@unina.it](mailto:francesca.defilippis@unina.it)
 
+- **Raffaele Magliulo**: [Website](https://magliulo.github.io/raffaelemagliulo/), e-mail: [raffae.magliulo@gmail.com](mailto:raffae.magliulo@gmail.com)
+- **Francesca De Filippis**: [Website](https://sites.google.com/view/francescadefilippis), e-mail: [francesca.defilippis@unina.it](mailto:francesca.defilippis@unina.it)
+
+
+--
