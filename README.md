@@ -1,4 +1,8 @@
 ---
+layout: home
+title: MetaCheeseDB
+permalink: /
+---
 
 
 ### Metadata-curated Cheese Database
