@@ -43,6 +43,7 @@ library(tidyverse)
 ## Machine learning and explainable artificial intelligence
 library(tidymodels)
 library(ranger)
+library(randomForest)
 library(kernelshap)
 library(shapviz)
 
