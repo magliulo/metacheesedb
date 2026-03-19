@@ -232,5 +232,3 @@ ggsave(
   height = 5,
   dpi    = 600
 )
-
-p_bee <- sv_importance(sv_Part_of_cheese$Rind, kind = "bee")
