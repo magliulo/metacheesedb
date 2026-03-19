@@ -2,7 +2,7 @@
 #              Cheese Microbiome Catalogue — ML & SHAP Analysis                #
 #                               Raffaele Magliulo                              #
 #   Department of Agricultural Sciences, University of Naples Federico II      #
-#   Department of Food Biosciences, Tegasc                                     #
+#   Department of Food Biosciences, Teagasc                                    #
 
 # ============================================================================ #
 #
