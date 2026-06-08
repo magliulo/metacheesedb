@@ -48,6 +48,10 @@ permalink:                /:categories/:year-:month-:day-:title:output_ext
 
 exclude:
   - _drafts
+  - vendor
+  - vendor/bundle
+  - Gemfile
+  - Gemfile.lock
 
 collections:
   pages:
