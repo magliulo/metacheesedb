@@ -1,5 +1,5 @@
 ---
-title: Code and reproducibility
+title: Reproducibility
 author: Raffaele Magliulo
 date: 2026-03-19
 category: Jekyll
@@ -267,16 +267,3 @@ ggsave(
   dpi    = 600
 )
 ```
-
-
----
-
-## Data availability
-
-All raw sequencing data generated in this study are publicly available at NCBI SRA under BioProject [PRJNA1299487](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1299487). Accession identifiers for all 1,593 samples, including all publicly available datasets reanalysed in this study, are provided in Supplementary File 1.
-
-Users can download the main reusable outputs here:
-
-- **metadata table**;
-- **microbial profiles**;
-- [**metagenome-assembled genomes**](https://data.mendeley.com/datasets/gtkxs6bscy/1).
