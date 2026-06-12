@@ -25,7 +25,7 @@ Please, refer to the following modules:
 
 ## Machine learning and explainable artificial intelligence analyses scripts
 
-### Reproducibility notes
+## Reproducibility notes
 
 - Input data required to run the R script below is available [here](https://github.com/magliulo/metacheesedb/blob/main/data/).
 - Script can be copied and pasted from below or downloadable [here](https://github.com/magliulo/metacheesedb/blob/main/code/R/ML_and_xAI.R) as R file.
