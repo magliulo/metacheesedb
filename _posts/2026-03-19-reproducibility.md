@@ -21,6 +21,10 @@ Please, refer to the following modules:
 - `04-Strainlevel_analysis` for strain-level phylogenomics
 - `05-Assembly_pipeline` for assembly, indexing and mapping, and binning;
 
+THIS WILL BE REPLACED/INTEGRATED WITH SOMETHING LIKE:
+
+"The [`code/Bash/`](https://github.com/magliulo/metacheesedb/tree/main/code/Bash) directory contains minimal study-specific commands used for the MetaCheeseDB analyses. These scripts are intended to document the core commands, parameters and database versions used in the study rather than reproduce the local HPC environment. Generic paths should therefore be replaced according to the local installation. Where relevant, the MetaCheeseDB scripts link directly to the corresponding upstream software. Reference genomes used for strain-level analyses correspond to those reported in Supplementary File 2."
+
 ---
 
 ## Machine learning and explainable artificial intelligence analyses scripts
