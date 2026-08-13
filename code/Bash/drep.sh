@@ -7,7 +7,7 @@
 dRep dereplicate /path/to/drep_output \
     --processors 20 \
     --genomes /path/to/bins_path.txt \
-    --completeness 75 \
+    --completeness 50 \
     --contamination 10 \
     --checkM_method lineage_wf \
     --S_algorithm ANImf \
