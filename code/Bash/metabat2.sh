@@ -9,7 +9,7 @@ jgi_summarize_bam_contig_depths \
     SAMPLE_ID.sorted.bam
 
 metabat2 \
-    -m 1500 \
+    -m 1000 \
     -i /path/to/SAMPLE_ID_contigs.fa \
     -a SAMPLE_ID_depth.txt \
     -o /path/to/output/SAMPLE_ID_metabat \
