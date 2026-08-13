@@ -2,7 +2,7 @@
 
 # 3. Assembly-based
 
-## 3.2 Mapping of reads to assembled contigs
+## 3.2 Bowtie2
 
 ### 3.2.1 Bowtie2 index
 bowtie2-build \
@@ -26,12 +26,10 @@ samtools view \
     -@ 20 \
     -o SAMPLE_ID.bam \
     SAMPLE_ID.sam
-
 samtools sort \
     -@ 20 \
     -o SAMPLE_ID.sorted.bam \
     SAMPLE_ID.bam
-
 samtools index \
     -@ 20 \
     SAMPLE_ID.sorted.bam
