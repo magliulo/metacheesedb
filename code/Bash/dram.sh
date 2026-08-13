@@ -2,7 +2,7 @@
 
 # 3. Assembly-based
 
-## 3.11 DRAM
+## 3.10 DRAM
 
 ### 3.10.1 Functional annotation
 DRAM.py annotate \
