@@ -24,6 +24,6 @@ Downstream statistical analyses and figure generation are provided separately in
 
 ## Data
 
-The `data/` directory contains the processed inputs required by these R scripts, including the harmonised MetaCheeseDB metadata, species-level taxonomic profiles, and alpha-diversity results. For analyses whose complete upstream reconstruction would require computationally intensive genome-resolved or functional annotation workflows, we additionally provide intermediate tables.
+The [`data/`](https://github.com/magliulo/metacheesedb/tree/main/data) directory contains the processed inputs required by these R scripts, including the harmonised MetaCheeseDB metadata, species-level taxonomic profiles, and alpha-diversity results. For analyses whose complete upstream reconstruction would require computationally intensive genome-resolved or functional annotation workflows, we additionally provide intermediate tables.
 
 ---
